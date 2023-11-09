@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio de Sesión</title>
+    <!-- Incluye el archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="images/icono.ico">
+    <link rel="stylesheet" href="estilos/estilos3.css">
+</head>
+<body>
+    <header class="fondo-personalizado py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <button class="btn btn-primary"><a href="carta.html" class="btn btn-primary">Nuestra Carta</a> </button>
+                </div>
+                <div class="col-3 text-center">
+                    <h1 class="btn btn-primary"><a href="index.html" class="btn btn-primary">Página Principal</a> </h1>
+                </div>
+                <div class="col-3 text-right">
+                    <button class="btn btn-primary"><a href="formulario.html" class="btn btn-primary">Pide a domicilio</a> </button>
+                </div>
+                <div class="col-3 text-right">
+                    <button class="btn btn-primary"><a href="inicio.html" class="btn btn-primary">Iniciar Sesión</a> </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Columna de Registro -->
+            <div class="col-md-6">
+                <h2>Registro</h2>
+                <p>¿No tienes cuenta? Regístrate:</p>
+                <form>
+                    <div class="form-group">
+                        <label for="nombreRegistro">Nombre:</label>
+                        <input type="text" class="form-control" id="nombreRegistro" name="nombreRegistro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailRegistro">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="emailRegistro" name="emailRegistro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordRegistro">Contraseña:</label>
+                        <input type="password" class="form-control" id="passwordRegistro" name="passwordRegistro" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                </form>
+            </div>
+
+            <!-- Columna de Inicio de Sesión -->
+            <div class="col-md-6">
+                <h2>Iniciar Sesión</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="emailInicio">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="emailInicio" name="emailInicio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordInicio">Contraseña:</label>
+                        <input type="password" class="form-control" id="passwordInicio" name="passwordInicio" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><a href="index.html" class="btn btn-primary">Iniciar Sesión</a> </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="fondo-personalizado py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <img id="milogo" src="images/medac.png" alt="">
+                </div>
+                <div class="col-4 text-center">
+                    <h1 class="text-light">Francisco Javier Suárez Cabello</h1>
+                </div>
+                <div class="col-4">
+                    <img src="images/gustoespañol.png" alt="">
+                </div>
+                <div class="col-3">
+                    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Gusto Español</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://fsc0005@alu.medac.es">Javier Suárez Cabello</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

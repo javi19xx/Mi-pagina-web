@@ -1,0 +1,94 @@
+.fondo-personalizado {
+  background-color: #2445ff;
+}
+
+.slider-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  width: 20%;
+  height: auto;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #2445ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  float: left;
+}
+
+.next-btn {
+  float: right;
+}
+
+.Textos {
+  font-family: "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #2445ff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes cambiaColor {
+  0% {
+    color: lightseagreen;
+  }
+
+  25% {
+    color: lightpink;
+  }
+
+  50% {
+    color: lightgreen;
+  }
+
+  75% {
+    color: orange;
+  }
+
+  100% {
+    color: lightcoral;
+  }
+}
+
+.textoAnimado {
+  font-size: 24px;
+  animation: cambiaColor 10s infinite;
+  font-family: "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2445ff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes giraImagen {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.imagenGiratoria:hover {
+  width: 300px;
+  height: 160px;
+  animation: giraImagen 5s infinite linear;
+}

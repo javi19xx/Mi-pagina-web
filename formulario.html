@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Incluye el archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="images/icono.ico">
+    <style>
+        .fondo-personalizado {
+            background-color:  #2445ff; 
+        }
+    </style>
+</head>
+<body>
+    <header class="fondo-personalizado py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <button class="btn btn-primary"><a href="carta.html" class="btn btn-primary">Nuestra Carta</a> </button>
+                </div>
+                <div class="col-3 text-center">
+                    <h1 class="btn btn-primary"><a href="index.html" class="btn btn-primary">Página Principal</a> </h1>
+                </div>
+                <div class="col-3 text-right">
+                    <button class="btn btn-primary"><a href="formulario.html" class="btn btn-primary">Pide a domicilio</a> </button>
+                </div>
+                <div class="col-3 text-right">
+                    <button class="btn btn-primary"><a href="inicio.html" class="btn btn-primary">Iniciar Sesión</a> </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor principal utilizando Bootstrap -->
+    <div class="container mt-4">
+        <h1 class="text-center">Pedido en Línea</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección de entrega:</label>
+                        <input type="text" class="form-control" id="direccion" name="direccion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Número de teléfono:</label>
+                        <input type="number" class="form-control" id="numero" name="numero" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comida">Plato a pedir:</label>
+                        <select class="form-control" id="comida" name="comida" required>
+                            <option value="Patatas Bravas">Patatas Bravas</option>
+                    <option value="Tiras de Pollo">Tiras de Pollo</option>
+                    <option value="Nuggets de Pollo">Nuggets de Pollo</option>
+                    <option value="Alitas de Pollo">Alitas de Pollo</option>
+                    <option value="Nachos">Nachos</option>
+                    <option value="Refrescos">Coca-Cola</option>
+                    <option value="Refrescos">Fanta</option>
+                    <option value="Refrescos">Aquarius</option>
+                    <option value="Cervezas">San Miguel</option>
+                    <option value="Cervezas">Estrella Galicia</option>
+                    <option value="Vino Valor">Vino Valor</option>
+                    <option value="Cócteles">Cócteles</option>
+                    <option value="Agua Grande">Agua Grande</option>
+                    <option value="Solomillo">Solomillo</option>
+                    <option value="Costilla">Costilla</option>
+                    <option value="Chuletas">Chuletas</option>
+                    <option value="Pechugas">Pechugas</option>
+                    <option value="Chuletón">Chuletón</option>
+                    <option value="Entrecot">Entrecot</option>
+                    <option value="Surtido de Embutidos">Surdido de Embutidos</option>
+                    <option value="Lubina">Lubina</option>
+                    <option value="Merluza">Merluza</option>
+                    <option value="Salmón">Salmón</option>
+                    <option value="Calamares Fritos">Calamares Fritos</option>
+                    <option value="Boquerones al limón">Boquerones al limón</option>
+                    <option value="Boquerones fritos">Boquerones fritos</option>
+                    <option value="Tarta de la Abuela">Tarta de la Abuela</option>
+                    <option value="Mus de Chocolate">Mus de Chocolate</option>
+                    <option value="Tiramisú">Tiramisú</option>
+                    <option value="Tarta de Frambuesa">Tarta de Frambuesa</option>
+                    <option value="Tarta de Galletas">Tarta de Galletas</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Añadir al carrito</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pedidoExitosoModal">Enviar Pedido</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="pedidoExitosoModal" tabindex="-1" role="dialog" aria-labelledby="pedidoExitosoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pedidoExitosoModalLabel">Pedido Exitoso</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Tu pedido ha sido confirmado y se encuentra en proceso de entrega.</p>
+                    <!-- Puedes agregar más información sobre el pedido aquí -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="fondo-personalizado py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <img id="milogo" src="images/medac.png" alt="">
+                </div>
+                <div class="col-4 text-center">
+                    <h1 class="text-light">Francisco Javier Suárez Cabello</h1>
+                </div>
+                <div class="col-4">
+                    <img src="images/gustoespañol.png" alt="">
+                </div>
+                <div class="col-3">
+                    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Gusto Español</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://fsc0005@alu.medac.es">Javier Suárez Cabello</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Incluye la biblioteca de Bootstrap JS (jQuery y Popper.js) y Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
